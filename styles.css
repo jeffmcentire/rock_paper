@@ -1,0 +1,17 @@
+.h1 {
+    display:flex;
+    flex: 0 1 0%;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 200%;
+    font-style:italic;
+    background-color: gray;
+
+}
+
+.center{
+    display:flex;
+    flex: 0 1 1;
+    justify-content: center;
+    height: 400px;
+}
