@@ -1,4 +1,4 @@
-.h1 {
+.title {
     display:flex;
     flex: 0 1 0%;
     justify-content: center;
@@ -9,9 +9,14 @@
 
 }
 
-.center{
+.display {
     display:flex;
-    flex: 0 1 1;
     justify-content: center;
-    height: 400px;
+    padding-top: 100px;
+    align-items: center;
+}
+
+.display img {
+  padding: 20px;
+
 }
