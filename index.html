@@ -14,14 +14,21 @@
 </div>
 
 <div class="display"> <!--div for images-->
-    <img id="playerImg" src="img/you.jpg">
-    <img src="img/vs.jpg" height="150px">
-    <img id="playerImg" src="img/computer.jpg">
+    <img id="playerImg" src="img/you.jpg" alt="pointing at you">
+    <img src="img/vs.jpg" height="150px" alt="verses">
+    <img id="playerImg" src="img/computer.jpg" alt="computer">
 </div>
 
-<div> <!--div for player input-->
-
+<div class="playerInput"> <!--div for player input-->
+    <label id="userPrompt" for="userInput">Make your move  </label>
+    <input type="text" id="playerInput" name="userInput"><br>
+    <button>1...2...3...Shoot!</button>
 </div>
+
+<div class="playerInput">
+    <a href="howtoplay.html">How to Play</a>
+</div>
+
 
 </body>
 </html>

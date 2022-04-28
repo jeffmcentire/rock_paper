@@ -18,5 +18,23 @@
 
 .display img {
   padding: 20px;
+}
 
+.playerInput {
+  display:flex;
+  justify-content: center;
+  padding-top: 20px;
+  align-items: center;
+  gap: 8px;
+}
+
+.howTo {
+  display:flex;
+  justify-content: center;
+  padding-top: 20px;
+  align-items: center;
+}
+
+.display img {
+  padding: 20px;
 }
