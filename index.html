@@ -16,19 +16,25 @@
 <div class="display"> <!--div for images-->
     <img id="playerImg" src="img/you.jpg" alt="pointing at you">
     <img src="img/vs.jpg" height="150px" alt="verses">
-    <img id="playerImg" src="img/computer.jpg" alt="computer">
+    <img id="computerImg" src="img/computer.jpg" alt="computer">
 </div>
 
-<div class="playerInput"> <!--div for player input-->
-    <label id="userPrompt" for="userInput">Make your move  </label>
-    <input type="text" id="playerInput" name="userInput"><br>
-    <button>1...2...3...Shoot!</button>
-</div>
+<form id="form" action="" method="get">
+    <div class="playerInput"> <!--div for player input-->
+
+        <label id="userPrompt">Make your move </label>
+
+        <input type="text" id="playerInput" name="playerInput" maxlength="8">
+
+        <button type="submit" value="submit">1...2...3...Shoot!</button>
+        
+    </div>
+</form>
+    
 
 <div class="playerInput">
     <a href="howtoplay.html">How to Play</a>
 </div>
-
 
 </body>
 </html>
