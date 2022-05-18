@@ -20,6 +20,13 @@
   padding: 20px;
 }
 
+.display button {
+  font-size: large;
+  margin-top: 10px;
+  width: 100px;
+  
+}
+
 .playerInput {
   display:flex;
   justify-content: center;
