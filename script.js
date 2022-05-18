@@ -54,7 +54,7 @@ function compare(player, comp){
   var winner = null;
 
   if( player !== comp){
-    
+
  
   }else{
     winner = 'tie';
@@ -64,9 +64,15 @@ function compare(player, comp){
   return winner;
 }
 // set playerSelection image
+function setPimg(playerInput){
 
+
+}
 // set computerSelection image
+function setCimg(compInput){
 
+  
+}
 
 
 // return results of game
