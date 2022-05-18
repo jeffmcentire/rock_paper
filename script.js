@@ -9,7 +9,7 @@ const onClick = (event) => {
   var cSelect =  compInput();
   var winner = compare(playerInput, cSelect);
 
-
+  console.log(winner);
 
 }
 window.addEventListener('click', onClick);
@@ -35,15 +35,15 @@ function compInput(){
   let ranNum = Math.floor(Math.random() * 5);
   let compSlect = null;
   switch (ranNum){
-    case 0:  compSelect = "rock";
+    case 0: compSelect = "rock";
       break;
-    case 1:  compSelect = "paper";
+    case 1: compSelect = "paper";
       break;    
-    case 2:  compSelect = "scissors";
+    case 2: compSelect = "scissors";
       break;
-    case 3:  compSelect = "lizard";
+    case 3: compSelect = "lizard";
       break;   
-    case 4:  compSelect = "spock";
+    case 4: compSelect = "spock";
       break;    
   }
 
@@ -51,15 +51,20 @@ function compInput(){
 }
 // compare playerSelection to computerSelection
 function compare(player, comp){
-  var winner = null;
+  var winner = 0;
 
   if( player !== comp){
-
+    switch (player){
+      case "rock" : return (comp == "lizard" || comp == "scissors") ? winner = 0 : winner = 1;
+      case "paper" : return (comp == "rock" || comp == "spock") ? winner = 0 : winner = 1;
+      case "scissors" : return (comp == "lizard" || comp == "paper") ? winner = 0 : winner = 1;
+      case "lizard" : return (comp == "spock" || comp == "paper") ? winner = 0 : winner = 1;
+      case "spock" : return (comp == "rock" || comp == "scissors") ? winner = 0 : winner = 1;
+    }
  
   }else{
-    winner = 'tie';
+    winner = 2;
   }
-
 
   return winner;
 }
